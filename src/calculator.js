@@ -38,6 +38,17 @@ $(document).ready(function() {
         $('#inputNumTwo').val('');
       });
 
+      $("#multiplyNums").click(function() {
+        var inputX = $("#inputNumOne").val();
+        var parsedX = parseInt(inputX);
+        var inputY = $("#inputNumTwo").val();
+        var parsedY = parseInt(inputY);
+        var addedXY = multiplyNumbers(parsedX, parsedY);
+        $("#result").html(addedXY);
+        $('#inputNumOne').val('').focus();
+        $('#inputNumTwo').val('');
+      });
+
 
   });
 

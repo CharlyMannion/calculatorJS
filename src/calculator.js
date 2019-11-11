@@ -17,11 +17,13 @@ function divideNumbers(p, q) {
 $(document).ready(function() {
     
       $("#addNums").click(function() {
-        $("#addResult").html("Output");
-        // $('#inputNumOne').val('');
+        var inputX = $("#inputNumOne").val();
+        var inputY = $("#inputNumTwo").val();
+        var addedXY = addNumbers(inputX, inputY)
+        $("#addResult").html(addedXY);
+        $('#inputNumOne').val('').focus();
         // $('#inputNumOne').focus();
-        // $('#inputNumTwo').val('');
-        // $('#inputNumTwo').focus();
+        $('#inputNumTwo').val('');
       }); 
 
 

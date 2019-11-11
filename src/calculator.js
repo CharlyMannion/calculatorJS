@@ -27,6 +27,17 @@ $(document).ready(function() {
         $('#inputNumTwo').val('');
       }); 
 
+      $("#subtractNums").click(function() {
+        var inputX = $("#inputNumOne").val();
+        var parsedX = parseInt(inputX);
+        var inputY = $("#inputNumTwo").val();
+        var parsedY = parseInt(inputY);
+        var addedXY = subtractNumbers(parsedX, parsedY);
+        $("#result").html(addedXY);
+        $('#inputNumOne').val('').focus();
+        $('#inputNumTwo').val('');
+      });
+
 
   });
 

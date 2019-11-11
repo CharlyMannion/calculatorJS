@@ -22,10 +22,12 @@ $(document).ready(function() {
         var inputY = $("#inputNumTwo").val();
         var parsedY = parseInt(inputY);
         var addedXY = addNumbers(parsedX, parsedY);
-        $("#addResult").html(addedXY);
+        $("#result").html(addedXY);
         $('#inputNumOne').val('').focus();
         $('#inputNumTwo').val('');
       }); 
 
 
   });
+
+//   next, make it so you click an add button to display the result, then introduce other buttons, then style

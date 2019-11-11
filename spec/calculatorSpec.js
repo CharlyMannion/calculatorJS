@@ -19,5 +19,12 @@ describe("Simple Calculator", function() {
             var multiplyResult = multiplyNumbers(2, 5);
             expect(multiplyResult).toEqual(10);
         });
+    });
+
+    describe("Divide", function() {
+        it("Divides one number by another", function(){
+            var divideResult = divideNumbers(10, 2);
+            expect(divideResult).toEqual(5);
+        })
     })
   });

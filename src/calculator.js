@@ -18,11 +18,12 @@ $(document).ready(function() {
     
       $("#addNums").click(function() {
         var inputX = $("#inputNumOne").val();
+        var parsedX = parseInt(inputX);
         var inputY = $("#inputNumTwo").val();
-        var addedXY = addNumbers(inputX, inputY)
+        var parsedY = parseInt(inputY);
+        var addedXY = addNumbers(parsedX, parsedY);
         $("#addResult").html(addedXY);
         $('#inputNumOne').val('').focus();
-        // $('#inputNumOne').focus();
         $('#inputNumTwo').val('');
       }); 
 

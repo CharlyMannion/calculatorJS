@@ -8,9 +8,16 @@ describe("Simple Calculator", function() {
     });
 
     describe("Subtract", function() {
-        it("Subtracts one number from another", function(){
+        it("Subtracts one number from another", function() {
             var subtractResult = subtractNumbers(10, 5);
             expect(subtractResult).toEqual(5);
         });
     });
+
+    describe("Multiply", function() {
+        it("Multiplies two numbers together", function() {
+            var multiplyResult = multiplyNumbers(2, 5);
+            expect(multiplyResult).toEqual(10);
+        });
+    })
   });

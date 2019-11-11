@@ -63,4 +63,4 @@ $(document).ready(function() {
 
   });
 
-//   next, make it so you click an add button to display the result, then introduce other buttons, then style
+//   next, refactor

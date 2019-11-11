@@ -49,6 +49,17 @@ $(document).ready(function() {
         $('#inputNumTwo').val('');
       });
 
+      $("#divideNums").click(function() {
+        var inputX = $("#inputNumOne").val();
+        var parsedX = parseInt(inputX);
+        var inputY = $("#inputNumTwo").val();
+        var parsedY = parseInt(inputY);
+        var addedXY = divideNumbers(parsedX, parsedY);
+        $("#result").html(addedXY);
+        $('#inputNumOne').val('').focus();
+        $('#inputNumTwo').val('');
+      });
+
 
   });
 

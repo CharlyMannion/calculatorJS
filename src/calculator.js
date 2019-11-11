@@ -13,3 +13,16 @@ function multiplyNumbers(d, e) {
 function divideNumbers(p, q) {
     return (p / q);
 }
+
+$(document).ready(function() {
+    
+      $("#addNums").click(function() {
+        $("#addResult").html("Output");
+        // $('#inputNumOne').val('');
+        // $('#inputNumOne').focus();
+        // $('#inputNumTwo').val('');
+        // $('#inputNumTwo').focus();
+      }); 
+
+
+  });
